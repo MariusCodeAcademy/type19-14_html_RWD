@@ -1,0 +1,51 @@
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.cards-container {
+  border: 1px solid #000;
+  background-color: lightblue;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+h1::after {
+  content: ' -- Desktop --';
+}
+.card {
+  padding: 15px;
+  font-size: 25px;
+  background-color: palegreen;
+  border: 1px solid lightcoral;
+}
+
+.cards-flex-container {
+  margin-top: 50px;
+}
+
+/* prisitaikantis dizainas ================================ */
+@media screen and (max-width: 768px) {
+  /* taisykles parasytos cia isigalios nuo 0 iki 768px */
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  h1::after {
+    content: ' -- Tablet --';
+  }
+}
+
+/* mobiliems 375px */
+
+@media screen and (max-width: 375px) {
+  /* taisykles parasytos cia isigalios nuo 0 iki 375px */
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+  h1::after {
+    content: ' -- Mobile --';
+  }
+}
