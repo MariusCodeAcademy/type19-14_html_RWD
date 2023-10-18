@@ -4,6 +4,7 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  margin-bottom: 300px;
 }
 
 .cards-container {
@@ -32,7 +33,9 @@ h1::after {
   flex-wrap: wrap;
 }
 .cards-flex-container > .card {
-  flex: 1 1 30%;
+  /* flex: 1 1 30%; */
+  flex: 1 1 320px;
+  /* width: 180px; */
 }
 
 /* prisitaikantis dizainas ================================ */
@@ -45,7 +48,7 @@ h1::after {
     content: ' -- Tablet --';
   }
   .cards-flex-container > .card {
-    flex: 1 1 47%;
+    /* flex: 1 1 47%; */
   }
 }
 
