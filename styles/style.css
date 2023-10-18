@@ -25,6 +25,14 @@ h1::after {
 
 .cards-flex-container {
   margin-top: 50px;
+  display: flex;
+  gap: 15px;
+  border: 1px solid #000;
+  background-color: lightgoldenrodyellow;
+  flex-wrap: wrap;
+}
+.cards-flex-container > .card {
+  flex: 1 1 30%;
 }
 
 /* prisitaikantis dizainas ================================ */
@@ -35,6 +43,9 @@ h1::after {
   }
   h1::after {
     content: ' -- Tablet --';
+  }
+  .cards-flex-container > .card {
+    flex: 1 1 47%;
   }
 }
 
@@ -47,5 +58,11 @@ h1::after {
   }
   h1::after {
     content: ' -- Mobile --';
+  }
+  .cards-flex-container {
+    flex-direction: column;
+  }
+  .cards-flex-container > .card {
+    /* flex: 1 1 100%; */
   }
 }
