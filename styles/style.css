@@ -1,3 +1,8 @@
+.cards-flex-container,
+.cards-container {
+  display: none !important;
+}
+
 .container {
   max-width: 1200px;
   margin-left: auto;
@@ -37,6 +42,11 @@ h1::after {
   flex: 1 1 320px;
   /* width: 180px; */
 }
+h1 {
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
 
 /* prisitaikantis dizainas ================================ */
 @media screen and (max-width: 768px) {
@@ -49,6 +59,10 @@ h1::after {
   }
   .cards-flex-container > .card {
     /* flex: 1 1 47%; */
+  }
+  h1 {
+    font-size: 35px;
+    margin-bottom: 35px;
   }
 }
 
@@ -67,5 +81,9 @@ h1::after {
   }
   .cards-flex-container > .card {
     /* flex: 1 1 100%; */
+  }
+  h1 {
+    font-size: 25px;
+    margin-bottom: 25px;
   }
 }
